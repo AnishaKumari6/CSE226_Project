@@ -1,4 +1,4 @@
-package com.shivtraders.inventory.ui
+package com.example.shivtraders.ui
 
 import android.net.Uri
 import android.widget.Toast
@@ -28,11 +28,11 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.window.Dialog
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import com.shivtraders.inventory.data.*
+import com.example.shivtraders.data.*
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
-import com.shivtraders.inventory.utils.CsvExporter
+import com.example.shivtraders.utils.CsvExporter
 
 private enum class Page {
     HOME, PRODUCTS, STOCK, HISTORY, MORE

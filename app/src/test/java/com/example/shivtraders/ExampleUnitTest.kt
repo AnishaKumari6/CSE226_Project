@@ -1,8 +1,8 @@
 package com.example.shivtraders
 
-import com.shivtraders.inventory.data.Category
-import com.shivtraders.inventory.data.Product
-import com.shivtraders.inventory.data.StockMovement
+import com.example.shivtraders.data.Category
+import com.example.shivtraders.data.Product
+import com.example.shivtraders.data.StockMovement
 import org.junit.Test
 import org.junit.Assert.*
 

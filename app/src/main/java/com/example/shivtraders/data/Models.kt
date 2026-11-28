@@ -1,4 +1,4 @@
-package com.shivtraders.inventory.data
+package com.example.shivtraders.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

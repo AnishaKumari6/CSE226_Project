@@ -88,7 +88,7 @@ The application follows a clean, premium design approach with a Burgundy-inspire
 The application follows the MVVM architecture pattern to separate UI components, business logic, and data persistence.
 
 ```text
-com.shivtraders.inventory
+com.example.shivtraders
 │
 ├── MainActivity.kt
 │

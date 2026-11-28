@@ -1,4 +1,4 @@
-package com.shivtraders.inventory.data
+package com.example.shivtraders.data
 
 import android.content.Context
 import androidx.room.Database

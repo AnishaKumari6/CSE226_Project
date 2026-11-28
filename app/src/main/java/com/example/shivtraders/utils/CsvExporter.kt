@@ -1,10 +1,10 @@
-package com.shivtraders.inventory.utils
+package com.example.shivtraders.utils
 
 import android.content.Context
 import android.net.Uri
-import com.shivtraders.inventory.data.Category
-import com.shivtraders.inventory.data.Product
-import com.shivtraders.inventory.data.StockMovement
+import com.example.shivtraders.data.Category
+import com.example.shivtraders.data.Product
+import com.example.shivtraders.data.StockMovement
 
 object CsvExporter {
 

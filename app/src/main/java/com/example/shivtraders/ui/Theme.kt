@@ -1,5 +1,5 @@
 
-package com.shivtraders.inventory.ui
+package com.example.shivtraders.ui
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme

@@ -1,14 +1,17 @@
+
 package com.example.shivtraders
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.shivtraders.inventory.data.InventoryDatabase
-import com.shivtraders.inventory.data.InventoryRepository
-import com.shivtraders.inventory.ui.ShivTradersTheme
-import com.shivtraders.inventory.ui.InventoryApp
+import androidx.compose.runtime.*
+import androidx.fragment.app.FragmentActivity
+import com.example.shivtraders.data.InventoryDatabase
+import com.example.shivtraders.data.InventoryRepository
+import com.example.shivtraders.ui.AuthenticationScreen
+import com.example.shivtraders.ui.ShivTradersTheme
+import com.example.shivtraders.ui.InventoryApp
 
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +21,21 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             ShivTradersTheme {
-                InventoryApp(repository)
+
+                var isAuthenticated by remember {
+                    mutableStateOf(false)
+                }
+
+                if (isAuthenticated) {
+                    InventoryApp(repository)
+                } else {
+                    AuthenticationScreen(
+                        activity = this,
+                        onAuthenticated = {
+                            isAuthenticated = true
+                        }
+                    )
+                }
             }
         }
     }
